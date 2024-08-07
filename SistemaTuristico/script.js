@@ -12,7 +12,7 @@ async function fetchPlaces(query) {
     const [latitude, longitude] = DEFAULT_POSITION;
     const radius = 3000;
     const limit = 50;
-    const oauthToken = 'RH0KL1MRW0FWSYY3SOB4UDEWNP1H5CUSEUUBPCRAMUQEAOR4';
+    const oauthToken = 'RH0KL1MRW0FWSYY3SOB4XXXXXXXXXXXXX '; // (CAMBIAR POR SU TOKEN, CREARLO EN:https://es.foursquare.com/developers/home)
 
     const url = `https://api.foursquare.com/v2/venues/search?v=20231010&query=${query}&ll=${latitude},${longitude}&radius=${radius}&limit=${limit}&oauth_token=${oauthToken}`;
 
